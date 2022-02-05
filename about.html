@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div id="navBar" class="nav-wrapper">
+        <div class="nav-left">
+            <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="brand">Jamison Coombs</div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="about-wrapper">
+            <div class="bio-pic-wrapper">
+                <img src="img/IMG_0588.jpg" alt="">
+            </div>
+            <div class="full-name">Jamison Coombs</div>
+            <div id="contact-info">
+                (760) 672-8591
+                jamisoncoombs@gmail.com
+            </div>
+            <div class="bio-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Voluptatibus ea porro vel tempore neque nobis.
+                      Rerum iusto enim molestiae, expedita deserunt blanditiis 
+                      voluptates odio, tempora aut cupiditate, assumenda error! 
+                      Veritatis! Lorem ipsum dolor sit amet consectetur adipisicingt.
+                        Fugit sit illum cumque perspiciatis nulla! Adipisci 
+                      laudantium, inventore esse cumque neque animi asperiores,
+                       doloribus nobis quibusdam laborum suscipit quasi quaerat 
+                       mollitia.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                     sit illum cumque perspiciatis nulla! Adipisci laudantium, inventore 
+                     esse cumque neque animi asperiores, doloribus nobis quibusdam laborum
+                      suscipit quasi quaerat mollitia.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                     sit illum cumque perspiciatis nulla! Adipisci laudantium,
+                     inventore esse cumque neque animi asperiores, doloribus nobis 
+                      quibusdam laborum suscipit quasi quaerat mollitia.
+                </p>
+            </div>
+            <button id="resume-button" onclick="toggleResume()"><img src="img/paper.png"/><p>Show Resume<p></button>
+            <embed 
+                id="resume-pdf" 
+                src="res/Resume.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"/>
+            </embed>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
