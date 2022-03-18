@@ -178,6 +178,7 @@ body {
     letter-spacing: -3px;
     animation: fadeInAnimation 0.5s;
     transition: 1s;
+    font-weight: bold;
 }
 .title-wrapper{
     max-width: 100%;
@@ -228,6 +229,11 @@ body {
     animation: slideInAnimation 1.5s ease-in-out;
     justify-content: center;
     align-content: center;
+    cursor: pointer;
+}
+
+.portfolio-items-wrapper a{
+    text-decoration: none;
 }
 
 .portfolio-item-wrapper:hover {
@@ -276,10 +282,19 @@ body {
     padding-right: 16px;
 }
 
+.logo-wrapper {
+    animation: fadeInAnimation 2s ease-in-out;
+}
 
 .logo-wrapper img{
     width: 50%;
-    animation: fadeInAnimation 2s ease-in-out;
+}
+
+#ballLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
 }
 
 .portfolio-item-info:hover {

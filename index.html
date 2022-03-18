@@ -50,8 +50,9 @@
     <div id="header"><h2>Education</h2></div>
     <div class="content-wrapper">
         <div class="portfolio-items-wrapper academics">
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background academics-bg" style="background-image:url(img/miracosta.jpg)"></div>
+
+            <div class="portfolio-item-wrapper" style="cursor:default">
+                <div class="portfolio-img-background academics-bg" style="background-image:url(img/itembgs/miracosta.jpg)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/miracostalogo.png">
@@ -66,8 +67,8 @@
                     MiraCosta College
                 </div>
             </div>
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background academics-bg" style="background-image:url(img/csusm.jpg)"></div>
+            <div class="portfolio-item-wrapper" style="cursor:default">
+                <div class="portfolio-img-background academics-bg" style="background-image:url(img/itembgs/csusm.jpg)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/csusmlogo.png">
@@ -89,8 +90,8 @@
     <div class="content-wrapper">
         <div class="portfolio-items-wrapper">
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/chessboard.png)"></div>
+            <div class="portfolio-item-wrapper" id="itemChess">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/chessboard.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/chesspiece.png">
@@ -104,11 +105,11 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/kchome.png)"></div>
+            <div class="portfolio-item-wrapper" id="itemKCThrift">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/kchome.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
-                        <img src="img/kcicon.png">
+                        <img src="img/kciconCrop.png">
                     </div>
                     <div class="portfolio-item-text">
                         An E-Commerce website for Kit N Caboodle Thrift Store in Oceanside, CA.
@@ -119,8 +120,8 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/wallpaper.jpg)"></div>
+            <div class="portfolio-item-wrapper" id="itemWaiter">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/waiter.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/chesspiece.png">
@@ -134,11 +135,11 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/p3.png)"></div>
+            <div class="portfolio-item-wrapper" id="itemChomp">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/chomp.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
-                        <img src="img/chesspiece.png">
+                        <img src="img/chompbrick.png" style="box-shadow: black -10px 5px 5px;">
                     </div>
                     <div class="portfolio-item-text">
                         Sample Text
@@ -149,11 +150,11 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/card.jpg)"></div>
+            <div class="portfolio-item-wrapper" id="itemBallGame">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/ballgame.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
-                        <img src="img/chesspiece.png">
+                        <div id="ballLogo"></div>
                     </div>
                     <div class="portfolio-item-text">
                         Sample Text.
@@ -164,8 +165,8 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/wallpaper.jpg)"></div>
+            <div class="portfolio-item-wrapper" id="itemFlagQuiz">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/flagquiz.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/chesspiece.png">
@@ -179,8 +180,8 @@
                 </div>
             </div>
 
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(img/p3.png)"></div>
+            <div class="portfolio-item-wrapper" id="itemCoursework">
+                <div class="portfolio-img-background" style="background-image:url(img/itembgs/p3.png)"></div>
                 <div class="portfolio-item-info">
                     <div class="logo-wrapper">
                         <img src="img/chesspiece.png">
@@ -213,5 +214,43 @@
         portfolioItem.childNodes[5].classList.remove('fade-out');
       });
     });
+
+    var itemChess = document.getElementById("itemChess");
+    var itemKCThrift = document.getElementById("itemKCThrift");
+    var itemWaiter = document.getElementById("itemWaiter");
+    var itemChomp = document.getElementById("itemChomp");
+    var itemBallGame = document.getElementById("itemBallGame");
+    var itemFlagQuiz = document.getElementById("itemFlagQuiz");
+    var itemCoursework = document.getElementById("itemCoursework");
+
+    itemChess.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/ChessSFML");
+    };
+    itemKCThrift.onclick = function()
+    {
+        window.open("https://www.kcthriftstore.com/");
+    };
+    itemWaiter.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/FoodServerHelperApp");
+    };
+    itemChomp.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/ChompGameSFML");
+    };
+    itemBallGame.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/Falling-Ball-Browser-Game");
+    };
+    itemFlagQuiz.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/Flag-Quiz");
+    };
+    itemCoursework.onclick = function()
+    {
+        window.open("https://github.com/JCoombs224/CS311");
+    };
+
 </script>
 </html>
