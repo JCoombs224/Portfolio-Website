@@ -336,6 +336,7 @@ body {
 
 #contact-info {
     font-size: 1.4em;
+    text-align: center;
     animation: fadeInAnimation 1.5s ease-in-out;
 }
 
@@ -434,5 +435,22 @@ body {
 
     .portfolio-item-wrapper {
         width: 95%;
+    }
+
+    .bio-pic-wrapper > img{
+        width: 85vw;
+    }
+
+    .bio-text{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #resume-button{
+        display: none;
+    }
+
+    #resume-pdf{
+        display: none;
     }
 }
