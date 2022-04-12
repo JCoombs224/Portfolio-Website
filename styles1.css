@@ -229,7 +229,6 @@ body {
     animation: slideInAnimation 1.5s ease-in-out;
     justify-content: center;
     align-content: center;
-    cursor: pointer;
 }
 
 .portfolio-items-wrapper a{
@@ -290,6 +289,11 @@ body {
     width: 50%;
 }
 
+.more-info-button{
+    color: transparent;
+    font-size: 1.2em;
+}
+
 #ballLogo{
     width: 100px;
     height: 100px;
@@ -300,6 +304,11 @@ body {
 .portfolio-item-info:hover {
     transition: 0.5s;
     color: white;
+}
+.portfolio-item-info:hover a{
+    transition: 0.5s;
+    color: rgb(1, 187, 1);
+    border-bottom: 2px solid rgb(1, 187, 1);
 }
 
 .subtitle {

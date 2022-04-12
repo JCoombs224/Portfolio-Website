@@ -13,13 +13,14 @@
     <title>Home</title>
 </head>
 <body>
+    <!-----------------------------Navigation----------------------------->
     <div id="navBar" class="nav-wrapper">
         <div class="nav-left">
             <div class="nav-link-wrapper active-nav-link">
-                <a href="index.html">Home</a>
+                <a href="index">Home</a>
             </div>
             <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
+                <a href="about">About</a>
             </div>
         </div>
         <div class="nav-right">
@@ -99,6 +100,7 @@
                     <div class="portfolio-item-text">
                         A game of chess written in C# using the SFML.Net library for graphical rendering.
                     </div>
+                    <a class="more-info-button" href="https://github.com/JCoombs224/ChessSFML" target="_blank"><br>More info...</a>
                 </div>
                 <div class="subtitle">
                     Chess Project
@@ -114,6 +116,7 @@
                     <div class="portfolio-item-text">
                         An E-Commerce website for Kit N Caboodle Thrift Store in Oceanside, CA.
                     </div>
+                    <a class="more-info-button" href="https://www.kcthriftstore.com/" target="_blank"><br>More info...</a>
                 </div>
                 <div class="subtitle">
                     KCThriftStore.com
@@ -129,6 +132,7 @@
                     <div class="portfolio-item-text">
                         An android app written in Java that acts as a utility to help food servers manage their tables and orders to each table. It is object-oriented and follows the MVC structure.
                     </div>
+                    <a class="more-info-button" href="https://github.com/JCoombs224/FoodServerHelperApp" target="_blank"><br>More info...</a>
                 </div>
                 <div class="subtitle">
                     eWaiter - Android App
@@ -151,6 +155,7 @@
                              and to its right. The top left block is "poisoned" and the player 
                             who eats this loses.
                         </p>
+                        <a class="more-info-button" href="https://github.com/JCoombs224/ChompGameSFML" target="_blank"><br>More info...</a>
                     </div>
                 </div>
                 <div class="subtitle">
@@ -166,7 +171,8 @@
                     </div>
                     <div class="portfolio-item-text">
                         Aim the ball through the holes, and don't let the ball hit the top of the game or game over!
-                    </div>
+                    <a class="more-info-button" href="https://github.com/JCoombs224/Falling-Ball-Browser-Game" target="_blank"><br>More info...</a>
+                </div>
                 </div>
                 <div class="subtitle">
                     Falling Ball Game
@@ -182,6 +188,7 @@
                     <div class="portfolio-item-text">
                         This Android app quizes players on their knowledge of flags from around the world!
                     </div>
+                    <a class="more-info-button" href="https://github.com/JCoombs224/Flag-Quiz" target="_blank"><br>More info...</a>
                 </div>
                 <div class="subtitle">
                     Flag Quiz
@@ -197,6 +204,7 @@
                     <div class="portfolio-item-text">
                         Assignments from my CS 311 Data Structures & Algorithms class at CSUSM with Professor Yongjie Zheng.
                     </div>
+                    <a class="more-info-button" href="https://github.com/JCoombs224/CS311" target="_blank"><br>More info...</a>
                 </div>
                 <div class="subtitle">
                     Data Structures and Algorithms Coursework
@@ -223,6 +231,8 @@
       });
     });
 
+    /* old onclick code
+    
     var itemChess = document.getElementById("itemChess");
     var itemKCThrift = document.getElementById("itemKCThrift");
     var itemWaiter = document.getElementById("itemWaiter");
@@ -231,34 +241,38 @@
     var itemFlagQuiz = document.getElementById("itemFlagQuiz");
     var itemCoursework = document.getElementById("itemCoursework");
 
-    itemChess.onclick = function()
+    if($(window).width() > 960)
     {
-        window.open("https://github.com/JCoombs224/ChessSFML");
-    };
-    itemKCThrift.onclick = function()
-    {
-        window.open("https://www.kcthriftstore.com/");
-    };
-    itemWaiter.onclick = function()
-    {
-        window.open("https://github.com/JCoombs224/FoodServerHelperApp");
-    };
-    itemChomp.onclick = function()
-    {
-        window.open("https://github.com/JCoombs224/ChompGameSFML");
-    };
-    itemBallGame.onclick = function()
-    {
-        window.open("https://github.com/JCoombs224/Falling-Ball-Browser-Game");
-    };
-    itemFlagQuiz.onclick = function()
-    {
-        window.open("https://github.com/JCoombs224/Flag-Quiz");
-    };
-    itemCoursework.onclick = function()
-    {
-        window.open("https://github.com/JCoombs224/CS311");
-    };
+        itemChess.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/ChessSFML");
+        };
+        itemKCThrift.onclick = function()
+        {
+            window.open("https://www.kcthriftstore.com/");
+        };
+        itemWaiter.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/FoodServerHelperApp");
+        };
+        itemChomp.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/ChompGameSFML");
+        };
+        itemBallGame.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/Falling-Ball-Browser-Game");
+        };
+        itemFlagQuiz.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/Flag-Quiz");
+        };
+        itemCoursework.onclick = function()
+        {
+            window.open("https://github.com/JCoombs224/CS311");
+        };
+    }
+    */
 
 </script>
 </html>
