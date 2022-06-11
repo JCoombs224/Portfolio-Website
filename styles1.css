@@ -354,8 +354,8 @@ body {
 }
 
 #contact-info a{
-    color: rgb(151, 151, 151);
-    text-decoration: none;
+    color: rgb(151, 151, 151)!important;
+    text-decoration: none!important;
 }
 
 .bio-text {
