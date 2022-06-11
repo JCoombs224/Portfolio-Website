@@ -338,8 +338,11 @@ body {
 
 .full-name{
     padding: 8px;
+    border-bottom: solid 1px;
+    margin-bottom: 8px;
     font-size: 1.8em;
     font-weight: bold;
+    color: wihte;
     animation: fadeInAnimation 1.2s ease-in-out;
 }
 
@@ -347,6 +350,12 @@ body {
     font-size: 1.4em;
     text-align: center;
     animation: fadeInAnimation 1.5s ease-in-out;
+    margin-bottom: 12px;
+}
+
+#contact-info a{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
 }
 
 .bio-text {
