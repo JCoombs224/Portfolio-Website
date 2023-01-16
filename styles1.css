@@ -149,12 +149,14 @@ body {
 }
 
 /* Main Styles */
-.header {
-    display: flex;
+.port-header {
+    display: grid;
+    width: 100%;
     justify-content: center;
     animation: fadeInAnimation 0.6s ease-in-out;
     text-align: center;
 }
+
 .header-wrapper {
     position: relative;
     align-items: center;
