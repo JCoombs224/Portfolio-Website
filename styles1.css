@@ -150,6 +150,7 @@ body {
 
 /* Main Styles */
 .header {
+    display: flex;
     justify-content: center;
     animation: fadeInAnimation 0.6s ease-in-out;
     text-align: center;
