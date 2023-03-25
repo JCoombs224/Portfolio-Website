@@ -1,0 +1,20 @@
+Things to add:
+
+Shift logos to the left when hovering and then display information for each item
+
+Education:
+- add honors society
+- add gpa
+
+Projects:
+- Add more school projects that I have done
+- fithub
+- outbreak
+- 421 japanese parser
+- Add zap app from dgi
+- add dgi forms
+
+Create separate pages for individual projects
+
+About:
+- contact form

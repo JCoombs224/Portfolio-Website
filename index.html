@@ -56,14 +56,17 @@
             <h1 class="title">Junior Web & Software Developer</h1>
             <h1 class="title">Welcome to my portfolio</h1>
         </div>
-        <div id="waving-hand">
-            <img src="img/hand.png">
+        <div class="hand-container">
+            <div id="waving-hand">
+                <img src="img/hand.png">
+            </div>
         </div>
     </div>
     </div>
 
 
-    <!-------------------------------Academics------------------------------->
+    <!-------------------------------Academics TODO: Remove inline styles from this section ------------------------------->
+    <div class="main-container">
     <div class="port-header"><h2>Education</h2></div>
     <div class="content-wrapper">
         <div class="portfolio-items-wrapper academics">
@@ -75,7 +78,7 @@
                         <img src="img/miracostalogo.png">
                     </div>
                     <div class="portfolio-item-text">
-                        <p>2018 - 2021</p>
+                        <h4 style="margin-bottom: 4px;">2018 - 2021</h4>
                         <p>Associate Degree for Transfer: Computer Science</p>
                         <p>Associate of Arts: Liberal Arts With a Focus in Math & Science</p>
                     </div>
@@ -91,8 +94,10 @@
                         <img src="img/csusmlogo.png">
                     </div>
                     <div class="portfolio-item-text">
-                        <p>2022 - 2023</p>
-                        <p>Bacholer of Science: Computer Science</p>
+                        <h4 style="margin-bottom: 4px;">2022 - 2023</h4>
+                        <p style="margin-top: 0;">Bacholer of Science: Computer Science</p>
+                        <h4 style="margin: 0">Honors</h4>
+                        <p style="margin-top: 4px">Tau Sigma Honors Society | Dean's List All Semesters</p>
                     </div>
                 </div>
                 <div class="subtitle">
@@ -283,9 +288,9 @@
                     Programming Languages Coursework
                 </div>
             </div>
-
         </div>
     </div>
+</div>
 </body>
 <script>
     const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
