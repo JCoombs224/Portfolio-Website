@@ -10,7 +10,8 @@ body {
     margin: 0px;
     font-family: "Questrial", sans-serif;
     background-size: auto;
-    background-color: rgb(13, 17, 23);
+    /* background-color: rgb(13, 17, 23); */
+    background-color: rgb(0, 4, 10);
     color: rgb(201, 209, 217);
     /*animation-iteration-count: 1;
     animation-fill-mode: forwards;*/
@@ -24,9 +25,15 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
     padding: 28px;
     padding-left: 64px;
-    background-color: rgb(22, 27, 34);
+    background-color: rgb(9, 14, 21);
+    z-index: 9999;
 }
 
 .nav-left {
@@ -190,6 +197,7 @@ body {
     justify-items: center;
     padding-left: 8px;
     padding-right: 8px;
+    padding-top: 128px;
 }
 .intro-wrapper{
     position: relative;
@@ -197,7 +205,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     padding-top: 95px;
     padding-bottom: 100px;
     align-items: center;
@@ -354,6 +362,7 @@ body {
 
 .about-wrapper{
     padding: 12px;
+    padding-top: 192px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,5 +530,15 @@ body {
     }
     #resume-button-small{
         display: block;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .nav-wrapper {
+        position: relative;
+    }
+
+    .header-wrapper, .about-wrapper {
+        padding-top: 8px;
     }
 }
