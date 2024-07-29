@@ -242,11 +242,13 @@ body {
     height: 100%;
 }
 
-/*
+
 .content-wrapper {
-    animation: fadeInAnimation 1s ease-in-out;
+    /* animation: fadeInAnimation 1s ease-in-out; */
+    background-color: rgb(0, 4, 10);
+    padding-bottom: 128px;
 }
-*/
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -255,7 +257,7 @@ body {
     justify-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    animation: fadeInAnimation 2.5s ease-in-out;
+    /* animation: fadeInAnimation 2.5s ease-in-out; */
 }
 
 .academics{
@@ -334,6 +336,19 @@ body {
     font-size: 1.2em;
 }
 
+#about {
+    position: relative;
+    padding-top: 32px;
+    background-color: rgb(0, 15, 37);
+    z-index: 3!important;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.95);
+    min-height: 85vh;
+}
+
+.about-text {
+    font-size: 1.2em;
+}
+
 #ballLogo{
     width: 100px;
     height: 100px;
@@ -364,11 +379,11 @@ body {
 }
 
 .about-wrapper{
-    padding: 12px;
+    /* padding: 12px;
     padding-top: 192px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .bio-pic-wrapper > img{
@@ -411,16 +426,24 @@ body {
     padding-bottom: 24px;
 }
 
-.p-item-wrapper {
+.parallax-wrapper {
     position: relative;
-    width: 100%;
-    /* padding-left: 1%; */
-    height: 80vh;
-    z-index: 2;
-    text-align: center;
     transition: transform 0.08s ease-out;
     /* add drop shadow on top */
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.95);
+    z-index: 2;
+}
+
+.p-item-wrapper {
+    /* position: relative; */
+    width: 100%;
+    /* padding-left: 1%; */
+    height: 80vh;
+    /* z-index: 2; */
+    text-align: center;
+    /* transition: transform 0.08s ease-out; */
+    /* add drop shadow on top */
+    /* box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.95); */
 }
 
 .video-bg {

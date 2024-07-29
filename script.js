@@ -1,7 +1,7 @@
 document.addEventListener('scroll', function() {
     const windowHeight = window.innerHeight;
-    const triggerPoint = windowHeight * 0.1; // Adjust this factor to control the trigger point
-    const pItems = document.querySelectorAll('.p-item-wrapper');
+    let triggerPoint = windowHeight * 0.08; // Adjust this factor to control the trigger point
+    const pItems = document.querySelectorAll('.parallax-wrapper');
 
     pItems.forEach((item, index) => {
         let prevItemCenter = 0;
@@ -12,6 +12,11 @@ document.addEventListener('scroll', function() {
         }
         if (index == pItems.length - 1) {
             return;
+        }
+
+        // adjust trigger point if the item has the id of about
+        if (item.id === 'moreProjects') {
+            triggerPoint = windowHeight - (item.getBoundingClientRect().bottom * 2);
         }
 
         const itemTop = item.getBoundingClientRect().top;
@@ -36,13 +41,13 @@ const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
   
 portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseover', () => {
-    console.log(portfolioItem.childNodes[5].classList)
+    // console.log(portfolioItem.childNodes[5].classList)
     portfolioItem.childNodes[1].classList.add('img-darken');
     portfolioItem.childNodes[5].classList.add('fade-out');
     });
 
     portfolioItem.addEventListener('mouseout', () => {
-    console.log(portfolioItem.childNodes[5].classList)
+    // console.log(portfolioItem.childNodes[5].classList)
     portfolioItem.childNodes[1].classList.remove('img-darken');
     portfolioItem.childNodes[5].classList.remove('fade-out');
     });
@@ -50,9 +55,11 @@ portfolioItems.forEach(portfolioItem => {
 
 // when homeBtn is clicked, scroll to the top of the page
 document.getElementById('homeBtn').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    window.requestAnimationFrame(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 });
 
@@ -76,10 +83,13 @@ document.getElementById('projectsBtn').addEventListener('click', function() {
     const projectsSection = document.getElementById('projects');
     const projectsSectionTop = projectsSection.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({
-        top: projectsSectionTop - 200,
-        behavior: 'smooth'
+    window.requestAnimationFrame(() => {
+        window.scrollTo({
+            top: projectsSectionTop - 200,
+            behavior: 'smooth'
+        });
     });
+    
 });
 
 // when projects is centered, set the class to active-nav-link
@@ -102,9 +112,11 @@ document.getElementById('aboutBtn').addEventListener('click', function() {
     const aboutSection = document.getElementById('about');
     const aboutSectionTop = aboutSection.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({
-        top: aboutSectionTop - 200,
-        behavior: 'smooth'
+    window.requestAnimationFrame(() => {
+        window.scrollTo({
+            top: aboutSectionTop - 200,
+            behavior: 'smooth'
+        });
     });
 });
 
